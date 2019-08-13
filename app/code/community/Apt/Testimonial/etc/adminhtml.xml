@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+
+<config>
+    <menu>
+        <apt translate="title" module="testimonial">
+            <title>Apt Extensions</title>
+            <sort_order>80</sort_order>
+            <children>
+                <testimonial translate="title" module="testimonial">
+                    <title>Testimonials</title>
+                    <sort_order>5</sort_order>
+                    <action>adminhtml/testimonial</action>
+                </testimonial>
+            </children>
+        </apt>
+    </menu>
+   <acl>
+        <resources>
+            <all>
+                <title>Allow Everything</title>
+            </all>
+            <admin>
+                <children>
+                    <apt>
+                        <title>Apt Extensions</title>
+                        <sort_order>150</sort_order>
+                         <children>
+                            <testimonial>
+                                 <title>Testimonials</title>
+                                <sort_order>5</sort_order>
+                            </testimonial>
+                          </children>
+                    </apt>
+                </children>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <testimonialsection translate="title" module="testimonial">
+                                        <title>Apt Testimonials</title>
+                                        <sort_order>11</sort_order>
+                                    </testimonialsection>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
