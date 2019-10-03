@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Apt_Testimonial",
+    "name": "openmage-module-fostering\/apt_testimonial",
     "type": "magento-module",
-    "license": "OSL-v3.0",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Testimonial module",
     "authors": [
